@@ -12,20 +12,18 @@ export default function Title({
       <div
         aria-label=""
         className={`
-                
-                w-[30px] h-[30px]
+                w-[40px] h-[40px]
                 md:w-[50px] md:h-[50px]
                 rounded-full
                 bg-[#58FFE3]
                 flex items-center justify-center
-             
             `}
       >
         <Image
           src={logotitle}
           alt="Logo"
-          width={30}
-          height={30}
+          width={25}
+          height={25}
           className="object-contain"
           priority
         />
