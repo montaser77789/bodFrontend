@@ -31,7 +31,7 @@ export default function HeroSection({ locale }: HeroSectionProps) {
   }, []);
   return (
     <section className="bg-[#0F172A]! grid-bg py-3 ">
-      <div className="container">
+      <div className="containe">
         {/* Hero Box */}
         <div className="relative h-[85vh]  rounded-3xl overflow-hidden">
           {/* Slider */}
@@ -138,17 +138,15 @@ export default function HeroSection({ locale }: HeroSectionProps) {
 
               <div className="mt-8 flex flex-wrap gap-4">
                 <Button
-                  size="lg"
-                  className="px-16 py-6 w-full md:w-fit bg-[linear-gradient(180deg,#EDEDED_0%,#58FFE3_100%)]!
+                  className="px-16 py-6 w-full md:w-fit bg-[linear-gradient(180deg,#EDEDED_0%,#58FFE3_100%)]! font-bold text-md md:text-lg
 "
                 >
                   احجز استشارة
                 </Button>
 
                 <Button
-                  size="lg"
                   variant="outline"
-                  className="px-16 py-6 w-full md:w-fit border-white text-white bg-transparent"
+                  className="px-16 py-6 w-full md:w-fit border-white text-white bg-transparent font-bold text-md md:text-lg"
                 >
                   تصفح المدونة
                 </Button>

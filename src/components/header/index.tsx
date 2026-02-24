@@ -12,7 +12,7 @@ const Header = async () => {
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-[#0F172A]! grid-bg `}
     >
-      <div className="container  flex justify-between items-center py-1">
+      <div className="containe  flex justify-between items-center py-1">
         {/* Logo */}
         <div className="flex items-center ">
           <div className=" rounded-full p-2 shadow-md">
