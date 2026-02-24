@@ -2,7 +2,7 @@ import Title from "../ui/Title";
 import Image from "next/image";
 
 import backgroundImage from "../../../public/about/LOGO-Bod-dark-300x2472.png";
-import man from "../../../public/about/c323dd78cd14292339fc7a81c07ae5ec84fcff29.png";
+import man from "../../../public/about/f47da385a7f4e4064e53d9d75bc70b3a859cc693.png";
 import logoWhite from "../../../public/Logo.png";
 import logo from "../../../public/LogoTitle.png";
 
@@ -30,8 +30,8 @@ export default function AboutSection() {
         <div className="absolute inset-0 bg-[#B0F4E9] bg-opacity-50 rounded-3xl" />
 
         {/* Content */}
-        <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 p-4 md:p-6  items-center rounded-3xl!">
-          <div className="text-right text-background space-y-6">
+        <div className="relative z-10 grid grid-cols-1 md:grid-cols-2  md:gap-16 p-4 md:p-6  items-center rounded-3xl!">
+          <div className="text-right text-background space-y-3  md:space-y-6">
             {[
               "في بُعد لا نؤمن بالتسويق العشوائي، بل نصنع استراتيجيات رقمية مدروسة تُحدث فرقًا حقيقيًا في نمو أعمالك.",
               "نحن وكالة تسويق رقمي سعودية نساعد العلامات التجارية على بناء حضور قوي وتحقيق نتائج قابلة للقياس. نجمع بين التحليل العميق للسوق، الإبداع في التنفيذ، والتركيز المستمر على الأداء.",
@@ -43,7 +43,9 @@ export default function AboutSection() {
                   <Image src={logoWhite} alt="Logo" width={16} height={16} />
                 </div>
 
-                <p className="text-base md:text-lg leading-relaxed">{text}</p>
+                <p className="text-base md:text-lg leading-relaxed font-bold">
+                  {text}
+                </p>
               </div>
             ))}
           </div>
@@ -51,7 +53,7 @@ export default function AboutSection() {
           {/* Image Content */}
           <div className="relative md:static flex justify-center md:justify-end">
             {/* Logo */}
-            <div className="absolute top-2 left-2 md:top-10 md:left-10 z-20">
+            <div className="absolute top-4 left-4 md:top-8 md:left-8 z-20">
               <Image
                 src={logo}
                 alt="Logo"
@@ -61,11 +63,18 @@ export default function AboutSection() {
               />
             </div>
 
-            {/* Man Image */}
             <Image
               src={man}
               alt="Founder"
-              className="static md:absolute bottom-0! left-0  w-[300px] h-[300px]  md:w-[472px]  md:h-[450px]     "
+              className="
+                  static
+                  md:absolute
+                  md:!bottom-0
+                  left-0
+                  w-[550px] h-[500px]
+                  md:w-[400px] md:h-[500px]
+                  z-[100]
+                "
             />
           </div>
         </div>
