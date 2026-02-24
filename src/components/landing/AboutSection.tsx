@@ -23,7 +23,7 @@ export default function AboutSection() {
           alt="Background Logo"
           height={100}
           width={100}
-          className=" absolute inset-0 z-1 w-[80%] h-[40%] mt-10 md:w-[50%] md:h-[90%] m-auto"
+          className=" absolute inset-0 z-1 w-[90%] h-[30%] mt-10 md:w-[50%] md:h-[80%] m-auto"
         />
 
         {/* Color Overlay */}
@@ -74,6 +74,7 @@ export default function AboutSection() {
                   w-[550px] h-[500px]
                   md:w-[400px] md:h-[500px]
                   z-[100]
+                  object-contain
                 "
             />
           </div>
