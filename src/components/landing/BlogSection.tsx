@@ -7,6 +7,7 @@ import logo from "../../../public/Logo.png";
 import img1 from "../../../public/blog/7bc8ccdab3c7feaf992912e8eb1e4b8b75907b16.jpg";
 import img2 from "../../../public/blog/95c92cf513945f7d1f3c94ef6093d99dcee7341f.jpg";
 import img3 from "../../../public/blog/bd28b84abc9524aed8fce5fc43187bf1f57c610f.jpg";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 
 const posts = [
   {
@@ -36,7 +37,7 @@ const posts = [
 
 export default function BlogSection() {
   return (
-    <section className="bg-[#0F1E3A] grid-bg py-16">
+    <section className="bg-[#182440]!  py-10 ">
       <div className="containe">
         <div className="flex flex-col text-center m-auto gap-1 justify-center text-white">
           <h1 className="text-xl md:text-2xl font-bold ">
@@ -100,7 +101,7 @@ export default function BlogSection() {
                     variant={"link"}
                     className="hover:text-primary text-white/70 transition cursor-pointer"
                   >
-                    اقرأ المزيد ←
+                    اقرأ المزيد <ArrowLeft size={20} className="w-4 h-4 ml-2" />
                   </Button>
                 </div>
               </CardContent>
@@ -109,9 +110,9 @@ export default function BlogSection() {
         </div>
 
         {/* More Button */}
-        <div className="flex justify-center mt-12">
-          <Button className="px-10 py-6 bg-primary text-black  hover:bg-primary/90">
-           عرض المزيد  ← 
+        <div className="flex justify-center items-center mt-12">
+          <Button className="px-14 py-6 bg-primary text-black  hover:bg-primary/90">
+           عرض المزيد <ArrowLeft size={20} className="w-4 h-4 ml-2" />
           </Button>
         </div>
       </div>

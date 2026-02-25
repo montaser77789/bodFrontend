@@ -8,7 +8,7 @@ import logo from "../../../public/LogoTitle.png";
 
 export default function AboutSection() {
   return (
-    <section className="containe py-10 md:py-12 ">
+    <section className="containe bg-[#182440] py-10 md:py-12 ">
       {/* Section Title */}
       <Title
         title="رحلتنا نحو التأثير"

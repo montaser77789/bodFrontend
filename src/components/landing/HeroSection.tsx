@@ -30,7 +30,7 @@ export default function HeroSection({ locale }: HeroSectionProps) {
     setIsMobile(window.innerWidth < 768);
   }, []);
   return (
-    <section className="bg-[#0F172A]! grid-bg py-3 ">
+    <section className="bg-[#0F172A]!  py-3 ">
       <div className="containe">
         {/* Hero Box */}
         <div className="relative h-[85vh]  rounded-3xl overflow-hidden">

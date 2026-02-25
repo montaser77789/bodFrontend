@@ -46,7 +46,7 @@ export default function ServicesSection() {
   const nextRef = useRef(null);
 
   return (
-    <section className="containe py-14  grid-bg ">
+    <section className="containe py-10 bg-[#182440]  ">
       {/* Title + Arrows */}
       <div className="flex items-center justify-between mb-8">
         <Title

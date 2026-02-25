@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Header from "@/components/header";
 
 
@@ -10,7 +11,7 @@ export default function WebsiteLayout({
     <>
       <Header />
       <main >{children}</main>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }

@@ -5,7 +5,7 @@ import logotitle from "../../../public/LogoTitle.png";
 
 export default function AIResultsSection() {
   return (
-    <section className="relative bg-[#1B2C53] grid-bg py-12 md:py-20">
+    <section className="relative py-10 bg-[#1B2C53]">
       <div className="containe grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-10 items-center">
         {" "}
         {/* Right Content */}
@@ -51,21 +51,22 @@ export default function AIResultsSection() {
           </div>
         </div>
         {/* Left Image */}
-        <div className="relative flex justify-center lg:justify-start">
-          {/* Logo top */}
-          <div className="absolute top-4 right-4 z-20 w-20 md:w-30">
-            <Image src={logo} alt="Logo" />
+        <div className=" flex justify-center lg:justify-start">
+          <div className="relative">
+            {/* Logo top */}
+            <div className="absolute top-0 right-0 z-20 w-26 md:w-30">
+              <Image src={logo} alt="Logo" />
+            </div>
+            <div className="absolute bottom-0 left-0 z-20 w-26 md:w-30">
+              <Image src={logo} alt="Logo" />
+            </div>
+            <Image
+              src={aiImage}
+              alt="AI Results"
+              className="rounded-3xl   object-contain "
+              priority
+            />
           </div>
-          <div className="absolute bottom-4 left-4 z-20 w-20 md:w-30">
-            <Image src={logo} alt="Logo" />
-          </div>
-
-          <Image
-            src={aiImage}
-            alt="AI Results"
-            className="rounded-3xl   object-contain"
-            priority
-          />
         </div>
       </div>
     </section>
