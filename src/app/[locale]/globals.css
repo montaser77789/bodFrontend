@@ -134,3 +134,17 @@
 .animate-arrow {
   animation: arrow-bounce 1.5s infinite ease-in-out;
 }
+
+.services-pagination .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background: #ccc;
+  opacity: 1;
+  border-radius: 9999px;
+  transition: all 0.3s;
+}
+
+.services-pagination .swiper-pagination-bullet-active {
+  width: 20px;
+  background: var(--primary);
+}
