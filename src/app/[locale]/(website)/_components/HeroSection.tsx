@@ -3,7 +3,7 @@ import { Locale } from "@/i18n.config";
 import backgroundImage from "../../../../../public/fc40e16183ae2a7c7fa8665634e5a7a4b7ed45a5.jpg";
 import { Badge } from "@/components/ui/badge";
 interface StatItem {
-  number: number;
+  number: number | string;
   label: string;
 }
 

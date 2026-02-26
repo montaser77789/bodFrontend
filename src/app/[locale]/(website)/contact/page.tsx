@@ -80,7 +80,7 @@ export default function AboutChatPage() {
       />
 
       {/* Content */}
-      <div className="relative flex flex-col h-[calc(100vh-100px)]">
+      <div className="relative flex flex-col h-[calc(100vh-120px)]">
         {/* Header */}
         <div className="py-6 text-center">
           <h1 className="text-2xl font-bold text-white">تسجيل جديد ✨</h1>

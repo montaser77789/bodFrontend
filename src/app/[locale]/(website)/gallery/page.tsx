@@ -1,9 +1,9 @@
 import { getCurrentLocale } from "@/lib/getCurrentLocale";
 import HeroSection from "../_components/HeroSection";
 import ResultsCard from "@/components/cards/ResultsCard";
-import Image1 from "../../../../../public/works/2874e0b85d5be5e22e62b645e383b513259a7927.jpg" 
-import Image2 from "../../../../../public/works/53e578146b783a6f9a956f4fb43cc320cc6c0dfc.jpg" 
-import Image3 from "../../../../../public/works/db1f69c8fa1d0f91c223456094ac17732b34341d.jpg" 
+import Image1 from "../../../../../public/works/2874e0b85d5be5e22e62b645e383b513259a7927.jpg";
+import Image2 from "../../../../../public/works/53e578146b783a6f9a956f4fb43cc320cc6c0dfc.jpg";
+import Image3 from "../../../../../public/works/db1f69c8fa1d0f91c223456094ac17732b34341d.jpg";
 import Image from "next/image";
 
 export default async function page() {
@@ -11,14 +11,14 @@ export default async function page() {
   return (
     <div>
       <HeroSection
-        title="عصر جديد من التسويق الذكي"
+        title="من الرؤية… إلى السيطرة على النتائج"
         locale={locale}
         BadgePropse="هيمنة رقمية"
-        description="مقالات متخصصة في التسويق الرقمي، وتحليلات تساعدك على اتخاذ قرارات أذكى."
+        description="نماذج من أعمال قادت التحديات إلى نتائج ملموسة، عبر تخطيط استراتيجي وتنفيذ دقيق يرتكز على الأرقام لا التخمين."
         stats={[
-          { number: 6, label: "مجالات تسويق" },
-          { number: 8, label: "دراسة حالة" },
-          { number: 35, label: "مقالة متخصصة" },
+          { number: "210", label: "مجالات تسويق" },
+          { number: "95 %", label: "دراسة حالة" },
+          { number: "2.5 K", label: "مقالة متخصصة" },
         ]}
       />
 

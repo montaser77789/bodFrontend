@@ -1,6 +1,8 @@
 "use client";
 
 import Image, { StaticImageData } from "next/image";
+import StepPagination from "../StepPagination";
+import { useState } from "react";
 
 interface ResultItem {
   value: string;
@@ -18,6 +20,8 @@ export default function ResultsCard({
   items,
   direction = "rtl",
 }: ResultsSectionProps) {
+  const total = items.length;
+  const [step, setStep] = useState(1);
   return (
     <section dir={direction} className="relative py-20 overflow-hidden">
       <div className="containe">
@@ -83,6 +87,14 @@ export default function ResultsCard({
             </div>
           ))}
         </div>
+      </div>
+      <div className="mt-10">
+        <StepPagination
+          current={step}
+          total={items.length}
+          onNext={() => setStep((s) => Math.min(s + 1, total))}
+          onPrev={() => setStep((s) => Math.max(s - 1, 1))}
+        />
       </div>
     </section>
   );

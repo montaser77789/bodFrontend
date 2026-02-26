@@ -3,6 +3,7 @@ import AIResultsSection from "@/components/landing/AIResultsSection";
 import BlogSection from "@/components/landing/BlogSection";
 import CallToActionSection from "@/components/landing/CallToActionSection";
 import HeroSection from "@/components/landing/HeroSection";
+import ImpactSection from "@/components/landing/ImpactSection";
 import PartnersSection from "@/components/landing/PartnersSection";
 import ServicesSection from "@/components/landing/ServicesSection";
 import { getCurrentLocale } from "@/lib/getCurrentLocale";
@@ -20,6 +21,7 @@ export default async function Home() {
       <AIResultsSection />
       <BlogSection />
       <PartnersSection />
+      <ImpactSection locale={locale} />
       <CallToActionSection />
     </main>
   );
