@@ -50,9 +50,9 @@ const Navbar = ({
     },
     {
       id: 2,
-      title: translations.navbar.about,
-      href: `/${locale}/${Pages.HOME}`,
-      page: Pages.ABOUT,
+      title: translations.navbar.blogs,
+      href: `/${locale}/${Pages.BLOGS}`,
+      page: Pages.BLOGS,
     },
     {
       id: 3,

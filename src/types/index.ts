@@ -1,7 +1,7 @@
 export type Translations = {
   navbar: {
     home: string;
-    about: string;
+    blogs: string;
     gallery: string;
     Whoarewe: string;
     contact: string;

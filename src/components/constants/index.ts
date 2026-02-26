@@ -17,10 +17,11 @@ export enum Routes {
 export enum Pages {
   HOME = "home",
   LOGIN = "login",
-  ABOUT = "about",
+  BLOGS = "blogs",
   GALLERY = "gallery",
   WHOAREWE = "whoarewe",
   CONTACT = "contact",
+
 }
 
 export enum InputTypes {
