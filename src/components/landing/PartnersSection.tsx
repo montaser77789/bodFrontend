@@ -32,7 +32,7 @@ export default function PartnersSection() {
   const logoGroups = chunkArray(logos, 4);
 
   return (
-    <section className="relative py-10 bg-[#182440]">
+    <section className="relative py-10 bg-[#182440] overflow-hidden">
       <div className="containe">
         {/* Title */}
         <Title

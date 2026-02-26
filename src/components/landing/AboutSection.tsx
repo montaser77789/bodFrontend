@@ -51,7 +51,7 @@ export default function AboutSection() {
           </div>
 
           {/* Image Content */}
-          <div className="relative md:static flex justify-center md:justify-end">
+          <div className="relative z-100 md:static flex justify-center md:justify-end">
             {/* Logo */}
             <div className="absolute top-4 left-4 md:top-8 md:left-8 z-20">
               <Image
@@ -73,7 +73,7 @@ export default function AboutSection() {
                   left-0
                   w-[550px] h-[500px]
                   md:w-[400px] md:h-[500px]
-                  z-[100]
+                  z-100
                   object-contain
                 "
             />

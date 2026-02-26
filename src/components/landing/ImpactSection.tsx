@@ -49,7 +49,7 @@ const impactItems: ImpactItem[] = [
 export default function ImpactSection({ locale }: ImpactSectionProps) {
   const direction = locale === "ar" ? "rtl" : "ltr";
   return (
-    <section dir={direction} className="relative py-24 overflow-hidden">
+    <section dir={direction} className="relative py-10    overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-[#0b1430]" />
 
